@@ -43,7 +43,6 @@ print('=' * 30)
 # endregion
 
 # region -------------- 加载训练数据和测试数据 -------------
-
 train_data, test_data = data_util.load_train_test_data(config)
 label_to_index, index_to_label = data_util.get_label_index(version=config['label_version'])
 # train dataset X-y
@@ -66,7 +65,8 @@ word_embedding_dim = 50
 RFAndRFAndWordEmbeddingCnnMerge.cross_validation(
     train_data=(train_X, train_y),
     test_data=(test_X, test_y),
-    need_validation=True,
+    # 是否要验证
+    need_validation=False,
     include_train_data=True,
     vocabulary_including_test_set=True,
     cv=3,
@@ -81,7 +81,6 @@ RFAndRFAndWordEmbeddingCnnMerge.cross_validation(
     word2vec_model_file_path=data_util.transform_word2vec_model_name('%dd_weibo_100w' % word_embedding_dim),
     shuffle_data=True,
     n_estimators_list=estimator_paramter_list,
-    # word2vec_model_file_path=None,
     need_segmented=True,
 )
 
