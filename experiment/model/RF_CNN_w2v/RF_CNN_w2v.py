@@ -26,10 +26,12 @@ config = {
 word2vec_to_solve_oov = False
 feature_type = 'word'
 seed = 64003
-num_filter_list = [10, 30, 50, 80, 100, 110, 150, 200, 300, 500, 1000]
-# 110 filters is best validation parameter
-# num_filter_list = [100]
-estimator_paramter_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400, 500, 1000, 2000, 3000, 4000, 5000]
+# num_filter_list = [10, 30, 50, 80, 100, 110, 150, 200, 300, 500, 1000]
+# estimator_paramter_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 200, 300, 400, 500, 1000, 2000, 3000, 4000, 5000]
+# 验证最高的参数
+# 110 filters 和 500 trees is best validation parameter
+num_filter_list = [110]
+estimator_paramter_list = [500]
 
 print('数据集：%s，标注版本：%s' % (config['dataset_type'], config['label_version']))
 
