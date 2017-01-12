@@ -16,8 +16,8 @@
     - `模型结果汇总.xls`: 模型结果
     
 ### Dependence lib
-- [ch2r_dataset](https://github.com/JDwangmo/ch2r_dataset)
-- [nlp_util version1.1](https://github.com/JDwangmo/nlp_util/tree/version1.1)
+- [ch2r_dataset version1.0](https://github.com/JDwangmo/ch2r_dataset/tree/version1.0)
+- [nlp_util version1.2](https://github.com/JDwangmo/nlp_util/tree/version1.2)
 
 ### User Manual
 - 1 
