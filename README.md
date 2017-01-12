@@ -12,10 +12,12 @@
 - [experiment](https://github.com/JDwangmo/IALP2016_OOD_DA_Recognition/tree/master/experiment)
     - 实验
 - [结果汇总](https://github.com/JDwangmo/IALP2016_OOD_DA_Recognition/tree/master/结果汇总)
-    - 结果汇总
+    - `子表汇总.xlsx`: paper上面的所有图表
+    - `模型结果汇总.xls`: 模型结果
     
 ### Dependence lib
 - [ch2r_dataset](https://github.com/JDwangmo/ch2r_dataset)
+- [nlp_util version1.1](https://github.com/JDwangmo/nlp_util/tree/version1.1)
 
 ### User Manual
 - 1 

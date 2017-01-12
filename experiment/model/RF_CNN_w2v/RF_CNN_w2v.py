@@ -66,7 +66,7 @@ RFAndRFAndWordEmbeddingCnnMerge.cross_validation(
     train_data=(train_X, train_y),
     test_data=(test_X, test_y),
     # 是否要验证
-    need_validation=False,
+    need_validation=True,
     include_train_data=True,
     vocabulary_including_test_set=True,
     cv=3,

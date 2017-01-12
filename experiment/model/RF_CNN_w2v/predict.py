@@ -92,7 +92,7 @@ if os.path.exists('model/RF_CNN_w2v.pkl'):
     print(y_pred_result, y_pred_score)
 
     y_pred_result = model.predict(
-        '你好',
+        '喜欢',
         transform_input=True,
     )
 
